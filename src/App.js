@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import "./App.css";
+import Name from './name';
+import Price from './price';
+import Description from './description';
+import Img from './img';
 import './App.css';
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+
 
 function App() {
   return (
+    <React.Fragment>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Card style={{ width: '18rem', backgroundColor:'grey'}} className='card'>
+      <Img />
+      <Card.Body>
+        <Card.Title><Name /></Card.Title>
+        <Card.Text>
+          <Description />
+        </Card.Text>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item><Price /></ListGroup.Item>
+      </ListGroup>
+    </Card>
     </div>
+    </React.Fragment>
   );
 }
 
