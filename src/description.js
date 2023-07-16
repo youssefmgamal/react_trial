@@ -1,8 +1,8 @@
-import product from "./product";
+import product from "./products";
 
-const Description = () => {
+const Description = (props) => {
 
-    return <p className="disc">{product.description}</p>
+    return <p className="disc">{props.description}</p>
 }
 
 export default Description

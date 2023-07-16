@@ -1,9 +1,8 @@
-import product from "./product";
-
-const Price = () => {
+const Price = (props) => {
      
-    return <p className="price">{product.price}</p>
+    return <p className="price">{props.price}</p>
 
 }
 
 export default Price
+

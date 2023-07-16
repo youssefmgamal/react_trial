@@ -1,8 +1,8 @@
-import product from "./product";
+import product from "./products";
 
-const Name = () => {
+const Name = (props) => {
 
-    return <p className="name">{product.name}</p>
+    return <p className="name">{props.name}</p>
 }
 
 export default Name

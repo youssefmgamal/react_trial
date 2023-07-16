@@ -1,8 +1,8 @@
-import product from "./product";
+import product from "./products";
 
-const Img = () =>{
+const Img = (props) =>{
 
-    return <img className= 'img' src={product.image} width={250} />
+    return <img className= 'img' src={props.image} width={250} />
 }
 
 export default Img
